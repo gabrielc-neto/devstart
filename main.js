@@ -1,3 +1,7 @@
+/*Você deverá criar uma função capaz de receber uma matriz de objetos contendo o
+ nome do atleta e as cinco notas atribuídas. A sua função deverá calcular a média 
+ das notas sem considerar a maior e menor nota do atleta. Por fim, deverá apresentar
+ao usuário o nome de cada atleta, seguido das notas e da média calculada*/
 let atletas = [
     {
       nome: "Cesar Abascal",
@@ -18,11 +22,14 @@ let atletas = [
    ];
 function recebeMatriz(matriz){
     let media = 0;
-   //for (let i = 0; i < matriz.length; i++){
-    //média sem consinderar a maior e menor nota
-    //media = 
-    //Math.max()
-    //Math.min()
-//}
-    return
+    let dados;
+   for (let i = 0; i < matriz.length; i++){
+    for (let j = 0; j < (matriz[i].['notas'].length); j++){
+        if(matriz[i].['notas'][j] != Math.min(matriz[i].['notas']) && Math.max(matriz[i].['notas'])){
+        media += matriz[i].['notas'][j];
+    } else {
+        continue;
+    }
+    dados = console.log(Atleta: Notas obtidas Média Válida:)
+}
 }
